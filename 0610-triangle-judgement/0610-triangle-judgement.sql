@@ -1,3 +1,4 @@
 SELECT x,y,z,
-case WHEN (x+y) > z AND (x+z) > y AND (y+z) > x THEN 'Yes' ELSE 'No' end AS triangle
-FROM Triangle 
+CASE WHEN (x+y)>z and (y+z)>x and (z+x)>y THEN "Yes"
+ELSE "No" end as triangle
+FROM Triangle
